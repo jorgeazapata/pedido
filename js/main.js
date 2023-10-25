@@ -1,4 +1,8 @@
+window.onload = inicio;
 
+function inicio(){
+    alert("Bienvenido, en esta plataforma deberas ingresar las cantidades reales de cada producto y ésta te entregará un sugerido de pedido.");
+}
 function mostrar(valor){
     var sttabla=25;
     document.getElementById("resultado").innerHTML=sttabla-valor;
