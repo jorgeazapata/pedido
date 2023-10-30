@@ -18,3 +18,6 @@ function mostrar3(valor){
     document.getElementById("resultado3").innerHTML=stmilares-valor;
     
 }
+function ImprimirPagina(){
+    window.print();
+}

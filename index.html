@@ -32,7 +32,7 @@
     						<label id="productos">milanesa de res</label>
     					</td>
     					<td width="50%">
-    						<input type="text" name="" onkeyup="mostrar2(this.value)" id="	" cols="3" rows="1">
+    						<input type="text" name="" onkeyup="mostrar2(this.value)" id="" cols="3" rows="1">
     					</td>
     				</tr>
     				<tr>
@@ -47,8 +47,17 @@
     			<hr>
     		</div>	
     		<div>
-    			<table border="1">
-    				<h3>PEDIDO N°</h3>
+    			<table>
+    				<tr>
+    					<td width="50%">
+    						<h3>PEDIDO N°</h3>	
+    					</td>
+    					<td width="50%">
+    						<input type="number">	
+    					</td>
+    				</tr>
+    			</table>
+    				<table border="1">
     					<tr>
     						<td width="50%">
     							<label id="productos">tabla</label>
@@ -75,8 +84,13 @@
     					</tr>
     			</table>
    			</div>
+   			<br>
+   			<div>
+   				<button class="bn6" onclick="ImprimirPagina();">IMPRIMIR REGISTRO</button>
+   			</div>
    		</center>
    	<script src="js/main.js"> </script>
+
 </body>
 </html>
 
