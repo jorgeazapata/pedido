@@ -15,24 +15,68 @@
             </div>
         </center>
     </header>
+    	<center>
 			<div class="texto">
-				<label id="productos">tabla</label>
-    			<input type="text" name="" onkeyup="mostrar(this.value)" id="" cols="3" rows="1">
-    			<br>
-    			<label id="productos">milanesa de res</label>
-    			<input type="text" name="" onkeyup="mostrar2(this.value)" id="" cols="3" rows="1">
-    			<br>
-    			<label id="productos">posta</label>
-    			<input type="text" name="" onkeyup="mostrar3(this.value)" id="" cols="3" rows="1">
+				<table border="0">
+							<label id="ingresar"><h3>Ingresa aquí la existencia de cada producto</h3></label>
+					<tr>
+						<td width="50%">
+							<label id="productos">tabla</label>
+						</td>
+    					<td width="50%">
+    						<input type="text" name="" onkeyup="mostrar(this.value)" id=""	 cols="3" rows="1">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td width="50%">
+    						<label id="productos">milanesa de res</label>
+    					</td>
+    					<td width="50%">
+    						<input type="text" name="" onkeyup="mostrar2(this.value)" id="	" cols="3" rows="1">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td width="50%">
+    						<label id="productos">posta</label>
+    					</td>
+    					<td width="50%">
+    						<input type="text" name="" onkeyup="mostrar3(this.value)" id="" cols="3" rows="1">
+    					</td>
+    				</tr>
+    			</table>
     			<hr>
-    		</div>
+    		</div>	
     		<div>
-    			<h1>PEDIDO</h1>
-    			<p>tabla<div id="resultado"></div></p>
-    			<p>milanesa de res<div id="resultado2"></div></p>
-    			<p>posta<div id="resultado3"></div></p>
+    			<table border="1">
+    				<h3>PEDIDO</h3>
+    					<tr>
+    						<td width="50%">
+    							<label id="productos">tabla</label>
+    						</td>
+    						<td width="50%">
+    							<div id="resultado"></div>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td width="50%">	
+    							<label id="productos">milanesa de res</label>
+    						</td>
+    						<td>
+    							<div id="resultado2"></div>
+    						</td>
+						</tr>
+						<tr>
+							<td>
+    							<label id="productos">posta</label>
+    						</td>
+    						<td>
+    							<div id="resultado3"></div>
+    						</td>
+    					</tr>
+    			</table>
    			</div>
-   			<script src="js/main.js"> </script>
+   		</center>
+   	<script src="js/main.js"> </script>
 </body>
 </html>
 
