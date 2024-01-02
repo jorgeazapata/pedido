@@ -1,275 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>pedido</title>
-	<link href="css/main.css" rel="stylesheet" />
+	<title>Sistema de Gestion de Pedidos</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="imgs/logopestana.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
 </head>
 <body>
-		<header>
+	<header>
         <center>
-            <div class="logo">
-                <img src="img/surtimax.png" width="250" height="65"><h3>SISTEMA DE GESTION DE PEDIDOS</h3>
-            </div>
+            <div>
+				<img src="img/surtimax.png" width="250" height="65"><h3>SISTEMA DE GESTION DE PEDIDOS</h3>
+			</div>
         </center>
     </header>
-    	<center>
-			<div class="texto">
-				<center>
-				<table border="0">
-					<caption id="ingresar"><h3>Ingresa aquí la existencia de cada producto</h3></caption>
-					<tr>
-						<th>plu</th>
-						<th>producto</th>
-						<th>existencia</th>
-					</tr>
-					<tr>
-						<td class="plu">22913</td>
-						<td width="45%">
-							<label id="productos">tabla</label>
-						</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar(this.value)" id=""	 cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">616300</td>
-    					<td width="45%">
-    						<label id="productos">milanesa de res</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar2(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">579763</td>
-    					<td width="45%">
-    						<label id="productos">posta</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar3(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">579762</td>
-						<td width="45%">
-							<label id="productos">pecho</label>
-						</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar4(this.value)" id=""	 cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">588526</td>
-    					<td width="45%">
-    						<label id="productos">morrillo</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar5(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">22959</td>
-    					<td width="45%">
-    						<label id="productos">tabliado</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar6(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">45083</td>
-						<td width="45%">
-							<label id="productos">higado de res</label>
-						</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar7(this.value)" id=""	 cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">28117</td>
-    					<td width="45%">
-    						<label id="productos">boffe de res</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar8(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">917541</td>
-    					<td width="45%">
-    						<label id="productos">chuleta de cerdo</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar9(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">733557</td>
-						<td width="45%">
-							<label id="productos">milanesa de cerdo</label>
-						</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar10(this.value)" id=""	 cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">602187</td>
-    					<td width="45%">
-    						<label id="productos">carne económica de cerdo</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar11(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    				<tr>
-    					<td class="plu">22973</td>
-    					<td width="45%">
-    						<label id="productos">cañón de cerdo</label>
-    					</td>
-    					<td width="45%">
-    						<input type="text" name="" onkeyup="mostrar12(this.value)" id="" cols="3" rows="1">
-    					</td>
-    				</tr>
-    			</table>
-    			</center>
-    			
-    		</div>	
-    		<div>
-    			<center>
-    			<table>
-    				<tr>
-    					<td width="60%">
-    						<h3>PEDIDO 	N°</h3>	
-    					</td>
-    					<td width="60%">
-    						<input type="number">	
-    					</td>
-    				</tr>
-    			</table>
-    				<table border="1">
-    					<tr>
-    						<td width="45%" class="plu">22913</td>
-    						<td width="45%">
-    							<label id="productos">tabla</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">616300</td>
-    						<td width="45%">	
-    							<label id="productos">milanesa de res</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado2"></div>
-    						</td>
-						</tr>
-						<tr>
-							<td class="plu">579763</td>
-							<td width="45%">
-    							<label id="productos">posta</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado3"></div>
-    						</td>
-    					</tr>
-    					<tr><td class="plu">579762</td>
-    						<td width="45%">
-    							<label id="productos">pecho</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado4"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">588526</td>
-    						<td width="45%">	
-    							<label id="productos">morrillo</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado5"></div>
-    						</td>
-						</tr>
-						<tr>
-							<td class="plu">22959</td>
-							<td width="45%">
-    							<label id="productos">tableado</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado6"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">45083</td>
-    						<td width="45%">
-    							<label id="productos">higado de res</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado7"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">22117</td>
-    						<td width="45%">	
-    							<label id="productos">boffe de res</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado8"></div>
-    						</td>
-						</tr>
-						<tr>
-							<td class="plu">917541</td>
-							<td width="45%">
-    							<label id="productos">chuleta de cerdo</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado9"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">733557</td>
-    						<td width="45%">
-    							<label id="productos">milanesa de cerdo</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado10"></div>
-    						</td>
-    					</tr>
-    					<tr>
-    						<td class="plu">602187</td>
-    						<td width="45%">	
-    							<label id="productos">carne económica de cerdo</label>
-    						</td>
-    						<td width="45%">
-    							<div id="resultado11"></div>
-    						</td>
-						</tr>
-						<tr>
-							<td class="plu">22973</td>
-							<td width="45%">
-    							<label id="productos">cañón de cerdo</label>
-    						</td>
-    						<td>
-    							<div id="resultado12"></div>
-    						</td>
-    					</tr>
-    			</table>
-    			</center>
-   			</div>
-   			<br>
-   			<div>
-   				<button class="bn6" onclick="ImprimirPagina();">IMPRIMIR REGISTRO</button>
-   			</div>
-   		</center>
-   	<script src="js/main.js"> </script>
+	    
+	<br>
 
+    <main>
+    	<center>
+            <h3>Selecciona tu dependencia para el pedido de carnes</h3>
+                <a href="surtimaxcaldas.html"><img src="img/surticaldas.png" width="200" height="120" class="agrandar"></img></a>   
+                
+                <a href="surtimaxfredonia.html"><img src="img/surtifredonia.png" width="200" height="120" class="agrandar"></img></a>
+
+                <a href="surtimaxamaga.html"><img src="img/surtiamaga.png" width="200" height="120" class="agrandar"></img></a>
+                <br>
+                <hr>
+                <br>
+                <h3>Selecciona tu dependencia para el pedido de fruver</h3>
+                <a href="surtimaxcaldasfruver.html"><img src="img/surticaldas.png" width="200" height="120" class="agrandar"></img></a>   
+                
+                <a href="surtimaxfredoniafruver.html"><img src="img/surtifredonia.png" width="200" height="120" class="agrandar"></img></a>
+
+                <a href="surtimaxamagafruver.html"><img src="img/surtiamaga.png" width="200" height="120" class="agrandar"></img></a>
+    	</center>
+    </main>
+
+    	<script src="js/Seleccion_de_marca.js"> </script>
 </body>
 </html>
-
-
-
-
